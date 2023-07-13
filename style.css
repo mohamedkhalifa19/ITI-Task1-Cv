@@ -87,10 +87,36 @@ body{
     color: #fff;
     border: 3px solid #fff;
     cursor: pointer;
-    transition: 0.6s;
+    transition:all 0.6s;
+    position: relative;
+}
+.about-me::before,
+.about-me::after{
+    position: absolute;
+    width: 0;
+    content:"";
+    opacity: 0.5;
+    background: rgb(177, 7, 63);
 }
 .header .intro-text .about-me:hover{
     border-color: rgb(177, 7, 63);
+    color: #fff;
+}
+.about-me::before{
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.about-me::after{
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.about-me:hover::before,
+.about-me:hover::after
+{
+    width: 50%;
+    transition: 0.7s ease;
 }
 
 .header .links {
@@ -103,6 +129,15 @@ body{
     margin-right: 20px;
     color: #fff;
     cursor: pointer;
+}
+.header .links .fa-linkedin{
+    color: #0000ff;
+}
+.header .links .fa-twitter{
+    color: #1f89ec;
+}
+.header .links .fa-github{
+    color: #000;
 }
 .about-section{
     padding: 65px 0;
@@ -149,7 +184,8 @@ body{
 
 .skills{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 .skills .skill {
@@ -161,7 +197,8 @@ margin-right: 30px;
 color: #fff;
 border-radius: 14px;
 background: #681840;
-width: 300px;
+width: 350px;
+margin-bottom: 10px;
 height: 200px;
 cursor: pointer;
 transition:all 0.8s;
@@ -210,12 +247,12 @@ i{
     justify-content: center;
     background: #fff;
     border-radius: 12px;
-    width: 350px;
+    width: 270px;
     transition: transform 0.7s;
     cursor: pointer;
 }
 .services .cards .card:hover{
-    transform: scale(1.1);
+    transform: scale(0.7);
 }
 .services .cards .card .left{
 width: 100%;
@@ -267,7 +304,12 @@ width: 100%;
     margin-right: 8px;
     color: #fff;
 }
-
+.contact .media .fa-phone-volume{
+    color: #00ff00;
+}
+.contact .media .fa-envelope{
+    color: red;
+}
 footer{
     background: #000;
     padding: 25px 0;
