@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    transition:  0.6s;
+}
+
+.header{
+    background: url("images/daniel-leone-v7daTKlZzaw-unsplash.jpg") no-repeat;
+    background-position: center center;
+    width: 100%;
+    opacity: 0.9;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .navbar{
+    background-color: #000;
+    height: 60px;
+    position: fixed;
+    z-index: 22;
+    left: 0;
+    right: 0;
+}
+.header .navbar ul{
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 19px;
+    width: 100%;
+    color: #fff;
+    padding: 12px 16px;
+}
+.header .navbar ul li a:hover{
+    background-color: #deee;
+    color: #000;
+}
+.header .intro-text{
+    margin: 170px 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.header .intro-text p{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(177, 7, 63);
+    font-weight: 700;
+}
+.header .intro-text h1{
+    font-size: 55px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.header .intro-text .jop-title{
+    font-size: 25px;
+    color: #dede;
+    border: 3px solid #fff;
+    border-bottom: 0;
+    padding: 0 10px;
+    border-top: 0;
+    margin: 20px 0;
+}
+.header .intro-text .about-me{
+    padding: 15px;
+    font-size: 16px;
+    width: 230px;
+    text-transform: capitalize;
+    font-weight: 600;
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.header .intro-text .about-me:hover{
+    border-color: rgb(177, 7, 63);
+}
+
+.header .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .links i{
+    font-size: 44px;
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.about-section{
+    padding: 65px 0;
+    display: flex;
+    flex-direction: column;
+    background: #f3f1f1;
+}
+.about-section h2{
+    text-align: center;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #727070;
+}
+.about-section h4{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 15px;
+}
+.about-section .introduce-myself{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+.about-section .introduce-myself .image{
+    width: 80px;
+    margin-right: 15px;
+}
+
+.about-section .introduce-myself .image img{
+    width: 100%;
+    border-radius: 50%;
+}
+.about-section .introduce-myself .text {
+    line-height: 26px;
+    color: #2b2929;
+    width: 50%;
+    font-size: 18px;
+}
+.about-section .skills{
+    margin-top: 45px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills .skill {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-right: 30px;
+color: #fff;
+border-radius: 14px;
+background: #681840;
+width: 300px;
+height: 200px;
+cursor: pointer;
+transition:all 0.8s;
+border: 1px solid #1a1616;
+}
+.skill:hover{
+    opacity: 0.8;
+}
+.skill .skill-logo{
+    font-size: 115px;
+}
+i{
+    color: blue;
+}
+.fa-css3-alt{
+    color: orange;
+}
+.fa-square-js{
+    color: yellow;
+}
+.skill .skill-name{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.services{
+    padding: 45px 0;
+    background: url("images/services.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.services h2{
+    font-size: 65px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.services .cards{
+    display: flex;
+    justify-content: space-around;
+}
+.services .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    width: 350px;
+    transition: transform 0.7s;
+    cursor: pointer;
+}
+.services .cards .card:hover{
+    transform: scale(1.1);
+}
+.services .cards .card .left{
+width: 100%;
+}
+.services .cards .card img{
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+.services .cards .card .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 9px;
+}
+.services .cards .card .right .card-name{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contact{
+    padding: 65px 0;
+    background:rgb(54, 54, 54);
+    background-attachment: fixed;
+    background-position: center;
+}
+.contact h2{
+    font-size: 70px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.contact .media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact .media a,.contact .media p{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contact .media i{
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 8px;
+    color: #fff;
+}
+
+footer{
+    background: #000;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    text-align: center;
+    font-size: 21px;
+    text-decoration: none;
+    color: #fff;
+}
+footer a i{
+     color: #fff;
+     font-size: 25px;
+     margin-left: 5px;
+}
+
+
+@media (max-width:992px) {
+    .header .intro-text p{
+        font-size: 18px;
+    }
+    .header .intro-text h1{
+        font-size: 20px;
+    }
+    .header .intro-text .jop-title{
+        font-size: 19px;
+    }
+    .header .about-me{
+        padding: 5px;
+        width: 75px;
+    }
+    .header .links i{
+font-size: 32px;
+    }
+    section h2{
+        font-size: 19px;
+    }
+    .about-section h4{
+        font-size: 17px;
+    }
+    .about-section .introduce-myself{
+        justify-content: space-between;
+    }
+    .about-section .introduce-myself .image{
+        vertical-align: top;
+    }
+    .about-section .introduce-myself .text {
+        width: 100%;
+    }
+    .skills,.services .cards{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .services .cards .card{
+        margin-bottom: 10px;
+        width: 250px;
+    }
+    .services .cards .card:hover{
+        transform: scale(0.8);
+    }
+    .services .cards{
+        align-items: center;
+    }
+    .skill{
+        margin-bottom: 10px;
+    }
+    .contact{
+        padding: 35px 0;
+    }
+    .contact h2{
+        font-size: 45px;
+    }
+    .contact .media i{
+        font-size: 20px;
+    }
+    .header .navbar ul li a{
+        font-size: 15px;
+        padding: 6px 8px;
+    }
+}
